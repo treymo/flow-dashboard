@@ -13,8 +13,8 @@
   </head>
 
   <script language="JavaScript">
-  	var constants = {{ constants|printjson }};
-    var alt_bootstrap = {{ alt_bootstrap|printjson }};
+  	var constants = {{ constants|tojson}};
+    var alt_bootstrap = {{ alt_bootstrap|tojson}};
   </script>
 
   <body>
@@ -23,7 +23,7 @@
 
       <script src="https://apis.google.com/js/api.js"></script>
       <!-- build:js -->
-      <script src="/dist/src/build.js"></script>
+      <script src="/static/js/build.js"></script>
       <!-- endbuild -->
 
       <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
